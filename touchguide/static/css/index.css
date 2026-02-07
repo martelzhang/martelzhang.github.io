@@ -358,6 +358,23 @@ body {
   height: auto;
 }
 
+/* TacUMI 3D Model Viewer */
+.tacumi-model-wrapper {
+  background: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 1rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.tacumi-model-viewer {
+  display: block;
+  width: 100%;
+  height: clamp(320px, 55vh, 720px);
+  border-radius: var(--border-radius);
+  background: var(--background-primary);
+}
+
 /* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
