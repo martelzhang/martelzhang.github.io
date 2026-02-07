@@ -360,19 +360,23 @@ body {
 
 /* TacUMI 3D Model Viewer */
 .tacumi-model-wrapper {
-  background: var(--background-secondary);
-  border: 1px solid var(--border-color);
+  background: #1a1a1a;
+  border: 1px solid #333;
   border-radius: var(--border-radius-lg);
-  padding: 1rem;
+  padding: 0;
   box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tacumi-model-viewer {
   display: block;
   width: 100%;
-  height: clamp(320px, 55vh, 720px);
-  border-radius: var(--border-radius);
-  background: var(--background-primary);
+  height: clamp(450px, 65vh, 750px);
+  border-radius: var(--border-radius-lg);
+  background: #2a2a2a;
 }
 
 /* Pagination and Misc Improvements */

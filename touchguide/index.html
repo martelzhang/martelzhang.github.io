@@ -453,9 +453,10 @@
         <h2 class="title is-3">TacUMI 3D Model</h2>
         <p class="subtitle is-5 has-text-centered">Interact with the TacUMI hardware in 3D.</p>
         <div class="tacumi-model-wrapper">
-          <model-viewer src="static/models/tacumi_3d_model.glb" camera-controls auto-rotate shadow-intensity="1"
-            exposure="1.1" environment-image="neutral" poster="static/images/touchguide-tacumi.png"
-            orientation="0deg 90deg 0deg"
+          <model-viewer src="static/models/tacumi_3d_model.glb" camera-controls auto-rotate shadow-intensity="0.8"
+            exposure="0.9" environment-image="neutral" poster="static/images/touchguide-tacumi.png"
+            orientation="0deg 90deg 0deg" camera-orbit="45deg 75deg 105%" min-camera-orbit="auto auto 50%"
+            max-camera-orbit="auto auto 200%" field-of-view="25deg" camera-target="0m 0m 0m"
             alt="3D view of the TacUMI tactile data collection hardware" class="tacumi-model-viewer">
           </model-viewer>
         </div>
