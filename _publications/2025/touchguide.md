@@ -1,6 +1,6 @@
 ---
 title:          "TouchGuide: Inference-Time Steering of Visuomotor Policies via Touch Guidance"
-date:           2025-01-01 00:01:00 +0800
+date:           2026-01-01 00:01:00 +0800
 selected:       true
 pub:            "Robotics: Science and Systems (RSS)"
 pub_date:       "2026"

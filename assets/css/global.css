@@ -288,6 +288,35 @@ hr {
     background-color: rgba(30, 41, 59, 0.04);
 }
 
+/* Nav pills - publications year sidebar */
+.nav-pills .nav-link {
+    color: var(--text-secondary) !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    padding: 0.3rem 0.75rem;
+}
+
+.nav-pills .nav-link:hover {
+    color: var(--primary-color) !important;
+    background-color: rgba(30, 41, 59, 0.06) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: var(--primary-color) !important;
+    background-color: rgba(30, 41, 59, 0.1) !important;
+    font-weight: 600;
+}
+
+/* Abstract links */
+.abstract-links a {
+    color: var(--primary-color);
+}
+
+.abstract-links a:hover {
+    color: var(--primary-hover);
+}
+
 /* Footer - terminal style */
 .footer {
     background-color: var(--background-secondary) !important;

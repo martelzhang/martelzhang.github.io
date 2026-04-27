@@ -1,6 +1,6 @@
 ---
 title:          "CoEnv: Driving Embodied Multi-Agent Collaboration via Compositional Environment"
-date:           2025-04-07 00:01:00 +0800
+date:           2026-04-07 00:01:00 +0800
 selected:       false
 pub:            "ArXiv Preprint"
 pub_date:       "2026"
@@ -12,7 +12,7 @@ authors:
 - Rui Li
 - Heng Zhou
 - Yiran Qin
-- <b>Zhemeng Zhang</b>
+- Zhemeng Zhang
 - Songtao Huang
 - Xiufeng Song
 - Zaibin Zhang

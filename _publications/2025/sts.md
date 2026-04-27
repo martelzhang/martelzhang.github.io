@@ -1,6 +1,6 @@
 ---
 title:          "Select-then-Solve: Paradigm Routing as Inference-Time Optimization for LLM Agents"
-date:           2025-04-09 00:01:00 +0800
+date:           2026-04-09 00:01:00 +0800
 selected:       false
 pub:            "ArXiv Preprint"
 pub_date:       "2026"
@@ -9,7 +9,7 @@ cover:          /assets/images/covers/sts.png
 authors:
 - Heng Zhou
 - Zelin Tan
-- <b>Zhemeng Zhang</b>
+- Zhemeng Zhang
 - Yutao Fan
 - Yibing Lin
 - Li Kang
