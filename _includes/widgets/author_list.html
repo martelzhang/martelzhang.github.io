@@ -12,12 +12,12 @@
 
     {%- if last_2chars == "*#" or last_2chars == "#*" -%}
         {%- assign key = _key | replace: "#*", "" | replace: "*#", "" -%}
-        {%- assign mark = "*<sup>#</sup>" -%}
+        {%- assign mark = "<sup>*#</sup>" -%}
         {%- assign has_eq_contrib = true -%}
         {%- assign has_corresponding = true -%}
     {%- elsif _key contains "*" and _key contains "†" -%} 
         {%- assign key = _key | replace: "*", "" | replace: "†", "" -%}
-        {%- assign mark = "*<sup>†</sup>" -%}
+        {%- assign mark = "<sup>*†</sup>" -%}
         {%- assign has_eq_contrib = true -%}
         {%- assign has_project_lead = true -%}
     {%- elsif _key contains "#" and _key contains "†" -%}
@@ -27,7 +27,7 @@
         {%- assign has_project_lead = true -%}
     {%- elsif last_char == "*" -%}
         {%- assign key = _key | split: "*" | first -%}
-        {%- assign mark = "*" -%}
+        {%- assign mark = "<sup>*</sup>" -%}
         {%- assign has_eq_contrib = true -%}
     {%- elsif last_char == "#" -%}
         {%- assign key = _key | split: "#" | first -%}
@@ -63,17 +63,17 @@
 {%- endfor -%}
 
 {%- if has_eq_contrib or has_corresponding or has_project_lead -%}
-<mark>(
+ <mark>(
     {%- if has_eq_contrib -%}
-        * <i>equal contribution</i>
+        <sup>*</sup>equal contribution
     {%- endif -%}
     {%- if has_project_lead -%}
         {%- if has_eq_contrib -%}, {% endif -%}
-        <sup>†</sup> <i>project lead</i>
+        <sup>†</sup>project lead
     {%- endif -%}
     {%- if has_corresponding -%}
         {%- if has_eq_contrib or has_project_lead -%}, {% endif -%}
-        <sup>#</sup> <i>corresponding author</i>
+        <sup>#</sup>corresponding author
     {%- endif -%}
 )</mark>
 {%- endif -%}

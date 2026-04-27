@@ -1,49 +1,52 @@
 @charset "utf-8";
+
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "JetBrains Mono", "Courier New", Courier, monospace;
     font-weight: 400;
+    font-size: 0.92rem;
     padding-top: 5.0rem;
+    letter-spacing: -0.02em;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "JetBrains Mono", monospace;
     font-weight: 700;
 }
 
+.navbar {
+    font-family: "JetBrains Mono", monospace;
+    opacity: 0.95;
+}
+
 .card {
-    border-radius: 0.8rem!important;
+    border-radius: 0.5rem!important;
 }
 
 .card-img-overlay {
-    border-radius: 0.8rem!important;
+    border-radius: 0.5rem!important;
 }
 
 .rounded-xl {
-    border-radius: 0.8rem!important;
+    border-radius: 0.5rem!important;
 }
 
 .rounded-xl-bottom {
-    border-bottom-right-radius: 0.8rem !important;
-    border-bottom-left-radius: 0.8rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
 }
 
 .rounded-xl-top {
-    border-top-left-radius: 0.8rem !important;
-    border-top-right-radius: 0.8rem !important;
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
 }
-
 
 .text-profile-position {
     font-weight: 400;
 }
 
 .text-profile-bio {
-    /* font-family: "Raleway"; */
     font-weight: 400;
-}
-
-.navbar {
-    opacity: 0.95;
 }
 
 .inline-badge {
@@ -89,6 +92,21 @@ div.lazy {
 }
 
 .email-text {
-    font-family: Courier, monospace;
+    font-family: "JetBrains Mono", Courier, monospace;
 }
 
+a {
+    color: #2563eb;
+}
+
+a:hover {
+    color: #1d4ed8;
+}
+
+mark {
+    font-size: 0.65rem;
+}
+
+i, em {
+    font-style: normal !important;
+}
