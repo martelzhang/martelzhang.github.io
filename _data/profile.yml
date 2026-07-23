@@ -2,9 +2,9 @@ primary_name: "Zhemeng Zhang"
 secondary_name: ""
 navbar_name: "Zhemeng Zhang"
 
-positions:
-- logo: /assets/images/badges/sjtu.png
-  name: Shanghai Jiao Tong University
+# positions:
+# - logo: /assets/images/badges/sjtu.png
+#   name: Shanghai Jiao Tong University
 
 email: "martelzhang@gmail.com"
 gscholar: 4LT7mdEAAAAJ
@@ -16,9 +16,9 @@ wechat_prompt: >-
 short_bio_text_justify: false
 short_bio: >-
   <p>
-  Hi, I'm Zhemeng, an M.Phil. student at Shanghai Jiao Tong University, advised by Prof. <a href="https://naoce.sjtu.edu.cn/teachers/10294.html" target="_blank">Daolin Ma</a>.
+  Hi, I'm Zhemeng.
   I received my Bachelor's degree in Automation from Southwest University.
-  Previously, I worked as a Research Intern at Xense Robotics, advised by Prof. <a href="https://naoce.sjtu.edu.cn/teachers/10294.html" target="_blank">Daolin Ma</a>.
+  Previously, I worked as a Research Intern at Xense Robotics and Shanghai Jiao Tong University, advised by Prof. <a href="https://naoce.sjtu.edu.cn/teachers/10294.html" target="_blank">Daolin Ma</a>.
   I am honored to closely collaborate with <a href="https://iranqin.github.io" target="_blank">Yiran Qin</a>.
   </p>
 
@@ -28,22 +28,22 @@ short_bio: >-
 
 portrait_url: /assets/images/photos/zhemeng.jpg
 
-education:
-- name: Shanghai Jiao Tong University
-  logo: /assets/images/badges/sjtu.png
-  position: M.Phil. Student, advised by Prof. Daolin Ma
-  date: Sep. 2026 - Present
-- name: Southwest University
-  logo: /assets/images/badges/swu.png
-  position: Bachelor in Automation
-  date: Sep. 2022 - Jun. 2026
+# education:
+# - name: Shanghai Jiao Tong University
+#   logo: /assets/images/badges/sjtu.png
+#   position: M.Phil. Student, advised by Prof. Daolin Ma
+#   date: Sep. 2026 - Present
+# - name: Southwest University
+#   logo: /assets/images/badges/swu.png
+#   position: Bachelor in Automation
+#   date: Sep. 2022 - Jun. 2026
 
-experience:
-- name: Xense Robotics
-  logo: /assets/images/badges/xense.svg
-  position: Research Intern, advised by Prof. Daolin Ma
-  date: Sep. 2025 - Feb. 2026
-- name: Sun Yat-sen University
-  logo: /assets/images/badges/sysu.png
-  position: Research Assistant, advised by Prof. Ruimao Zhang
-  date: Jun. 2025 - Aug. 2025
+# experience:
+# - name: Xense Robotics
+#   logo: /assets/images/badges/xense.svg
+#   position: Research Intern, advised by Prof. Daolin Ma
+#   date: Sep. 2025 - Feb. 2026
+# - name: Sun Yat-sen University
+#   logo: /assets/images/badges/sysu.png
+#   position: Research Assistant, advised by Prof. Ruimao Zhang
+#   date: Jun. 2025 - Aug. 2025
