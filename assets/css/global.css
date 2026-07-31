@@ -37,8 +37,8 @@ body::after {
 }
 
 body {
-    font-family: "JetBrains Mono", "Courier New", Courier, monospace;
-    font-weight: 400;
+    font-family: "Roboto Mono", "Courier New", Courier, monospace;
+    font-weight: 700;
     font-size: 0.92rem;
     padding-top: 5.0rem;
     letter-spacing: -0.02em;
@@ -50,14 +50,14 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Roboto Mono", monospace;
     font-weight: 700;
     color: var(--text-primary);
 }
 
 /* Navbar - terminal style */
 .navbar {
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Roboto Mono", monospace;
     opacity: 1;
     background-color: var(--background-primary) !important;
     border-bottom: 1px solid var(--border-color) !important;
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6,
 
 .nav-item.active .nav-link {
     color: var(--primary-color) !important;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* Override Bootstrap bg-light */
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6,
 /* Section headers with terminal prompt */
 .card-body h6,
 .my-3 > h6 {
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Roboto Mono", monospace;
     font-weight: 700;
     color: var(--primary-color);
     text-transform: uppercase;
@@ -157,12 +157,12 @@ h1, h2, h3, h4, h5, h6,
 
 /* Profile card */
 .text-profile-position {
-    font-weight: 400;
+    font-weight: 700;
     color: var(--text-secondary);
 }
 
 .text-profile-bio {
-    font-weight: 400;
+    font-weight: 700;
     color: var(--text-secondary);
 }
 
@@ -210,7 +210,7 @@ div.lazy {
 }
 
 .email-text {
-    font-family: "JetBrains Mono", Courier, monospace;
+    font-family: "Roboto Mono", Courier, monospace;
 }
 
 /* Links - terminal style */
@@ -272,7 +272,7 @@ hr {
     border: 1px solid var(--primary-color) !important;
     color: var(--primary-color) !important;
     border-radius: 0 !important;
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Roboto Mono", monospace;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-size: 0.85rem;
@@ -305,7 +305,7 @@ hr {
 .nav-pills .show > .nav-link {
     color: var(--primary-color) !important;
     background-color: rgba(30, 41, 59, 0.1) !important;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* Abstract links */
