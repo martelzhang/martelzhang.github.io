@@ -23,16 +23,18 @@ plugins:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENSE
-  - .DS_Store
-  - vendor/
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
 # timezone: Asia/Shanghai
 
 collections:
   - publications
   - news
+  - showcase
