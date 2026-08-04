@@ -238,6 +238,11 @@ mark {
     padding: 0.1em 0.3em;
 }
 
+h6 .katex,
+.media-body .katex {
+    font-size: 1em !important;
+}
+
 i, em {
     font-style: normal !important;
 }
