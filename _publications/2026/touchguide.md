@@ -13,7 +13,7 @@ authors:
 - Xin Wen
 - Yuzhi Zhang
 - Boyan Li
-- Yiran Qin†
+- Yiran Qin♮
 - Jin Liu
 - Can Zhao
 - Li Kang
@@ -22,7 +22,7 @@ authors:
 - Philip Torr
 - Hao Su
 - Ruimao Zhang
-- Daolin Ma#
+- Daolin Ma‡
 
 links:
   Paper: https://arxiv.org/pdf/2601.20239

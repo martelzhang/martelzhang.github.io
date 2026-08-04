@@ -1,42 +1,31 @@
 {%- assign authors = include.authors -%}
 {%- assign has_eq_contrib = false -%}
 {%- assign has_corresponding = false -%}
+{%- assign has_core_contributor = false -%}
 {%- assign has_project_lead = false -%}
 
 {%- for _key in authors -%}
-    {%- assign key = _key -%}
+    {%- assign key = _key | replace: "*", "" | replace: "†", "" | replace: "♮", "" | replace: "‡", "" | replace: "#", "" -%}
     {%- assign mark = "" -%}
 
-    {%- assign last_char = _key | slice: -1, 1 %}
-    {%- assign last_2chars = _key | slice: -2, 2 %}
-
-    {%- if last_2chars == "*#" or last_2chars == "#*" -%}
-        {%- assign key = _key | replace: "#*", "" | replace: "*#", "" -%}
-        {%- assign mark = "<sup>*#</sup>" -%}
+    {%- if _key contains "*" -%}
+        {%- assign mark = mark | append: "*" -%}
         {%- assign has_eq_contrib = true -%}
-        {%- assign has_corresponding = true -%}
-    {%- elsif _key contains "*" and _key contains "†" -%} 
-        {%- assign key = _key | replace: "*", "" | replace: "†", "" -%}
-        {%- assign mark = "<sup>*†</sup>" -%}
-        {%- assign has_eq_contrib = true -%}
+    {%- endif -%}
+    {%- if _key contains "†" -%}
+        {%- assign mark = mark | append: "†" -%}
+        {%- assign has_core_contributor = true -%}
+    {%- endif -%}
+    {%- if _key contains "♮" -%}
+        {%- assign mark = mark | append: "♮" -%}
         {%- assign has_project_lead = true -%}
-    {%- elsif _key contains "#" and _key contains "†" -%}
-        {%- assign key = _key | replace: "#", "" | replace: "†", "" -%}
-        {%- assign mark = "<sup>#†</sup>" -%}
+    {%- endif -%}
+    {%- if _key contains "‡" or _key contains "#" -%}
+        {%- assign mark = mark | append: "‡" -%}
         {%- assign has_corresponding = true -%}
-        {%- assign has_project_lead = true -%}
-    {%- elsif last_char == "*" -%}
-        {%- assign key = _key | split: "*" | first -%}
-        {%- assign mark = "<sup>*</sup>" -%}
-        {%- assign has_eq_contrib = true -%}
-    {%- elsif last_char == "#" -%}
-        {%- assign key = _key | split: "#" | first -%}
-        {%- assign mark = "<sup>#</sup>" -%}
-        {%- assign has_corresponding = true -%}
-    {%- elsif last_char == "†" -%}
-        {%- assign key = _key | split: "†" | first -%}
-        {%- assign mark = "<sup>†</sup>" -%}
-        {%- assign has_project_lead = true -%}
+    {%- endif -%}
+    {%- if mark != "" -%}
+        {%- assign mark = mark | prepend: "<sup>" | append: "</sup>" -%}
     {%- endif -%}
 
     {%- assign info = site.data.authors[key] -%}
@@ -62,18 +51,26 @@
     {%- endif -%}
 {%- endfor -%}
 
-{%- if has_eq_contrib or has_corresponding or has_project_lead -%}
+{%- if has_eq_contrib or has_core_contributor or has_project_lead or has_corresponding -%}
  &nbsp;<mark>(
+    {%- assign has_previous_note = false -%}
     {%- if has_eq_contrib -%}
         <sup>*</sup>equal contribution
+        {%- assign has_previous_note = true -%}
+    {%- endif -%}
+    {%- if has_core_contributor -%}
+        {%- if has_previous_note -%}, {% endif -%}
+        <sup>†</sup>core contributor
+        {%- assign has_previous_note = true -%}
     {%- endif -%}
     {%- if has_project_lead -%}
-        {%- if has_eq_contrib -%}, {% endif -%}
-        <sup>†</sup>project lead
+        {%- if has_previous_note -%}, {% endif -%}
+        <sup>♮</sup>project lead
+        {%- assign has_previous_note = true -%}
     {%- endif -%}
     {%- if has_corresponding -%}
-        {%- if has_eq_contrib or has_project_lead -%}, {% endif -%}
-        <sup>#</sup>corresponding author
+        {%- if has_previous_note -%}, {% endif -%}
+        <sup>‡</sup>corresponding author
     {%- endif -%}
 )</mark>
 {%- endif -%}
