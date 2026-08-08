@@ -242,6 +242,22 @@ mark {
     padding: 0.1em 0.3em;
 }
 
+.author-mark {
+    font-family: "Times New Roman", "Cambria Math", "STIXGeneral", serif;
+    font-size: 0.78em;
+    font-weight: 700;
+    line-height: 0;
+    letter-spacing: 0;
+    margin-left: 0.05em;
+    text-shadow: 0.018em 0 0 currentColor;
+}
+
+mark .author-mark {
+    font-size: 0.85em;
+    margin-left: 0;
+    margin-right: 0.08em;
+}
+
 h6 .katex,
 .media-body .katex {
     font-size: 1em !important;

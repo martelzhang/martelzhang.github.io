@@ -25,7 +25,7 @@
         {%- assign has_corresponding = true -%}
     {%- endif -%}
     {%- if mark != "" -%}
-        {%- assign mark = mark | prepend: "<sup>" | append: "</sup>" -%}
+        {%- assign mark = mark | prepend: '<sup class="author-mark">' | append: "</sup>" -%}
     {%- endif -%}
 
     {%- assign info = site.data.authors[key] -%}
@@ -55,22 +55,22 @@
  &nbsp;<mark>(
     {%- assign has_previous_note = false -%}
     {%- if has_eq_contrib -%}
-        <sup>*</sup>equal contribution
+        <sup class="author-mark">*</sup>equal contribution
         {%- assign has_previous_note = true -%}
     {%- endif -%}
     {%- if has_core_contributor -%}
         {%- if has_previous_note -%}, {% endif -%}
-        <sup>†</sup>core contributor
+        <sup class="author-mark">†</sup>core contributor
         {%- assign has_previous_note = true -%}
     {%- endif -%}
     {%- if has_project_lead -%}
         {%- if has_previous_note -%}, {% endif -%}
-        <sup>♮</sup>project lead
+        <sup class="author-mark">♮</sup>project lead
         {%- assign has_previous_note = true -%}
     {%- endif -%}
     {%- if has_corresponding -%}
         {%- if has_previous_note -%}, {% endif -%}
-        <sup>‡</sup>corresponding author
+        <sup class="author-mark">‡</sup>corresponding author
     {%- endif -%}
 )</mark>
 {%- endif -%}
