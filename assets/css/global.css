@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6,
     padding: 0.25rem;
 }
 
-/* Section headers with terminal prompt */
+/* Section headers */
 .card-body h6,
 .my-3 > h6 {
     font-family: "JetBrains Mono", monospace;
@@ -147,12 +147,6 @@ h1, h2, h3, h4, h5, h6,
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-size: 0.85rem;
-}
-
-.my-3 > h6:first-child::before,
-.rounded-xl > h6:first-child::before {
-    content: '> ';
-    color: var(--primary-color);
 }
 
 /* Profile card */
@@ -181,6 +175,55 @@ h1, h2, h3, h4, h5, h6,
 
 .no-break {
     white-space: nowrap;
+}
+
+/* Education */
+.education-list {
+    border-top: 1px solid var(--border-color);
+}
+
+.education-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) max-content;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.education-main {
+    min-width: 0;
+}
+
+.education-name {
+    color: var(--text-primary);
+    font-size: inherit;
+    font-weight: 400;
+}
+
+.education-dept,
+.education-position,
+.education-date {
+    color: var(--text-secondary);
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.education-date {
+    justify-self: end;
+    text-align: right;
+}
+
+@media (max-width: 575.98px) {
+    .education-item {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.75rem;
+        align-items: start;
+    }
+
+    .education-date {
+        justify-self: end;
+    }
 }
 
 .cover-image {

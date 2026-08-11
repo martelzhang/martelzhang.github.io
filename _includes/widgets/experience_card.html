@@ -4,21 +4,20 @@
             <div class="card-body p-4">
                 <div class="row">
                     {% if site.data.profile.education %}
-                    <div class="col-md-6">
-                        <div class="my-1">
+                    <div class="col-12">
+                        <div class="my-1 education-section">
                             <h6>Education</h6>
-                            <ul class="list-unstyled mb-1">
+                            <ul class="list-unstyled mb-1 education-list">
                                 {% for item in site.data.profile.education %}
-                                <li class="d-flex mb-1" style="align-items: flex-start;">
-                                    <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="{% if item.logo_height %}height: {{ item.logo_height }}; width: auto;{% else %}width: 18px;{% endif %} flex-shrink: 0; margin-top: 0.15em;" class="mr-1">
-                                    <div style="flex: 1; min-width: 0;">
-                                        <div>{{ item.name }}</div>
-                                        <div class="small">{{ item.dept }}</div>
-                                        <div class="small d-flex">
-                                            <div>{{ item.position }}</div>
-                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
-                                        </div>
+                                <li class="education-item">
+                                    <div class="education-main">
+                                        <div class="education-name">{{ item.name }}</div>
+                                        {% if item.dept %}
+                                        <div class="education-dept">{{ item.dept }}</div>
+                                        {% endif %}
+                                        <div class="education-position">{{ item.position }}</div>
                                     </div>
+                                    <div class="education-date no-break">{{ item.date }}</div>
                                 </li>
                                 {% endfor %}
                             </ul>
