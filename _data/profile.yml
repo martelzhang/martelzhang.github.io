@@ -23,18 +23,18 @@ short_bio: >-
   </p>
 
   <p>
-  My research interests lie in Robotic Manipulation, World Model, and Tactile Perception.
+  My research interests lie in Robotic Manipulation, World Action Model, and Tactile Perception.
   </p>
 
 portrait_url: /assets/images/photos/zhemeng.jpg
 
-education:
-- name: The University of Hong Kong
-  position: Ph.D. in Computing and Data Science, advised by Prof. Hongyang Li
-  date: Sep. 2026 - Present
-- name: Southwest University
-  position: B.Eng. in Automation
-  date: Sep. 2022 - Jun. 2026
+# education:
+# - name: The University of Hong Kong
+#   position: Ph.D. in Computing and Data Science, advised by Prof. Hongyang Li
+#   date: Sep. 2026 - Present
+# - name: Southwest University
+#   position: B.Eng. in Automation
+#   date: Sep. 2022 - Jun. 2026
 
 # experience:
 # - name: Xense Robotics
