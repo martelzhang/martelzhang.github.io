@@ -16,8 +16,7 @@ wechat_prompt: >-
 short_bio_text_justify: false
 short_bio: >-
   <p>
-  Hi, I'm Zhemeng.
-  I am a Ph.D. student in Computing and Data Science at <a href="https://www.hku.hk/" target="_blank">The University of Hong Kong</a>, <a href="https://opendrivelab.com/" target="_blank">OpenDriveLab</a> @ <a href="https://mmlab.hk/" target="_blank">MMLab</a>, advised by Prof. <a href="https://www.hongyang.li/" target="_blank">Hongyang Li</a>.
+  Hi, I'm Zhemeng, a Ph.D. student in Computing and Data Science at <a href="https://www.hku.hk/" target="_blank">The University of Hong Kong</a>, <a href="https://opendrivelab.com/" target="_blank">OpenDriveLab</a> @ <a href="https://mmlab.hk/" target="_blank">MMLab</a>, advised by Prof. <a href="https://www.hongyang.li/" target="_blank">Hongyang Li</a>.
   Previously, I worked as a Research Intern at Xense Robotics and Shanghai Jiao Tong University, advised by Prof. <a href="https://naoce.sjtu.edu.cn/teachers/10294.html" target="_blank">Daolin Ma</a>.
   I am honored to closely collaborate with <a href="https://iranqin.github.io" target="_blank">Yiran Qin</a>.
   </p>

@@ -29,4 +29,5 @@ links:
   arXiv: https://arxiv.org/abs/2601.20239
   Project Page: https://martelzhang.github.io/touchguide/
   Code: https://github.com/martelzhang/TouchGuide
+  YouTube: https://www.youtube.com/watch?v=UfrgtrDb6qE
 ---
