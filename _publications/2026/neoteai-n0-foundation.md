@@ -13,7 +13,7 @@ authors:
 abstract:
 
 links:
-  Paper: https://research.neoteai.com/assets/n0-foundation-report.pdf
+  Paper: https://arxiv.org/pdf/2608.29601
   Project Page: https://research.neoteai.com/n0-foundation/
   Code: https://github.com/neoteai/N0-Foundation
   Dataset: https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData

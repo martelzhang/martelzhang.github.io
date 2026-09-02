@@ -13,8 +13,8 @@ authors:
 abstract:
 
 links:
-  Paper: https://research.neoteai.com/assets/n0-vtla-report.pdf
+  Paper: https://arxiv.org/pdf/2607.23782
   Project Page: https://research.neoteai.com/n0-vtla/
   Code: https://github.com/neoteai/N0-VTLA
-  Checkpoints: https://huggingface.co/datasets/NeoteAIEmbodied/OpenNeoData/tree/main
+  Checkpoints: https://huggingface.co/NeoteAI/n0-vtla-base
 ---

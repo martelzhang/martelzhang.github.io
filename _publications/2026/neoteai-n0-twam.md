@@ -13,8 +13,8 @@ authors:
 abstract:
 
 links:
-  Paper: https://research.neoteai.com/assets/n0-twam-report.pdf
+  Paper: https://arxiv.org/pdf/2607.23783
   Project Page: https://research.neoteai.com/n0-twam/
   Code: https://github.com/neoteai/N0-TWAM
-  Checkpoints: https://github.com/neoteai/N0-TWAM
+  Checkpoints: https://huggingface.co/NeoteAI/n0-twam-base
 ---
