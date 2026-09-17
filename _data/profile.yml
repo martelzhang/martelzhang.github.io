@@ -16,7 +16,7 @@ wechat_prompt: >-
 short_bio_text_justify: false
 short_bio: >-
   <p>
-  Hi, I'm Zhemeng, a Ph.D. student in Computing and Data Science at <a href="https://opendrivelab.com/" target="_blank">OpenDriveLab</a> @ <a href="https://mmlab.hk/" target="_blank">MMLab</a>, The University of Hong Kong, and a Research Intern at Archon Robotics, advised by Prof. <a href="https://www.hongyang.li/" target="_blank">Hongyang Li</a> in both roles.
+  Hi, I'm Zhemeng, a Ph.D. student in Computing and Data Science at <a href="https://opendrivelab.com/" target="_blank">OpenDriveLab</a> @ <a href="https://mmlab.hk/" target="_blank">MMLab</a>, The University of Hong Kong, and a Research Intern at Archon Robotics, advised by Prof. <a href="https://www.hongyang.li/" target="_blank">Hongyang Li</a>.
   Previously, I received my B.Eng. in Automation from Southwest University and worked as a Research Intern at Xense Robotics and Shanghai Jiao Tong University, advised by Prof. <a href="https://naoce.sjtu.edu.cn/teachers/10294.html" target="_blank">Daolin Ma</a>.
   I am honored to closely collaborate with my friend Dr. <a href="https://iranqin.github.io" target="_blank">Yiran Qin</a> at NeoteAI.
   </p>
