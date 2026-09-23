@@ -26,8 +26,8 @@ authors:
 
 links:
   Paper: https://arxiv.org/pdf/2601.20239
-  arXiv: https://arxiv.org/abs/2601.20239
   Project Page: https://martelzhang.github.io/touchguide/
   Code: https://github.com/martelzhang/TouchGuide
+  Hardware: https://drive.google.com/drive/folders/1vm9Gr-SmsYW3Mj53L00d_iwcakxhVEXc
   YouTube: https://www.youtube.com/watch?v=UfrgtrDb6qE
 ---

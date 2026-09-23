@@ -1,39 +1,20 @@
 @charset "utf-8";
 
-/* Terminal Theme - Catppuccin Latte Palette */
+/* Original terminal theme with a clean egg-white background. */
 :root {
     --primary-color: #1e293b;
     --primary-hover: #0f172a;
     --text-primary: #4c4f69;
     --text-secondary: #6c6f85;
     --text-light: #9ca0b0;
-    --background-primary: #eff1f5;
-    --background-secondary: #e6e9ef;
-    --background-accent: #dce0e8;
+    --background-primary: #faf9f6;
+    --background-secondary: #faf9f6;
+    --background-accent: #f3f1eb;
     --border-color: #bcc0cc;
     --transition: all 0.15s ease;
     --glow: 0 0 10px rgba(30, 41, 59, 0.15);
     --link-color: #1e293b;
     --link-hover: #0f172a;
-}
-
-/* Scanline overlay */
-body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 9999;
-    background: repeating-linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.03) 0px,
-        rgba(0, 0, 0, 0.03) 1px,
-        transparent 1px,
-        transparent 3px
-    );
 }
 
 body {
@@ -66,6 +47,8 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar-brand {
+    font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+    font-weight: 700;
     color: var(--primary-color) !important;
 }
 
@@ -161,7 +144,8 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .profile-name {
-    font-family: "Roboto Mono", "JetBrains Mono", "Courier New", Courier, monospace;
+    font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+    font-weight: 700;
 }
 
 .inline-badge {
@@ -237,6 +221,7 @@ h1, h2, h3, h4, h5, h6,
 
 /* Lazy loading */
 img.lazy {
+    object-fit: contain;
     background-image: url('images/loading.gif');
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -415,11 +400,4 @@ hr {
 ::selection {
     background: rgba(30, 41, 59, 0.2);
     color: #fff;
-}
-
-/* Print styles */
-@media print {
-    body::after {
-        display: none;
-    }
 }
