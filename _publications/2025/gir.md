@@ -9,7 +9,7 @@ cover:          /assets/images/covers/gir.png
 authors:
 - Zhemeng Zhang
 - Yifei Nie
-- Le Yin
+- Le Yin‡
 
 links:
   Paper: https://arxiv.org/pdf/2504.17648
