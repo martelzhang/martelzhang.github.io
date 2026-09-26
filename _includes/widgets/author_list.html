@@ -55,7 +55,7 @@
  &nbsp;<mark>(
     {%- assign has_previous_note = false -%}
     {%- if has_eq_contrib -%}
-        <sup class="author-mark">*</sup>equal contribution
+        <sup class="author-mark">*</sup>Equal Contribution
         {%- assign has_previous_note = true -%}
     {%- endif -%}
     {%- if has_core_contributor -%}
@@ -65,12 +65,12 @@
     {%- endif -%}
     {%- if has_project_lead -%}
         {%- if has_previous_note -%}, {% endif -%}
-        <sup class="author-mark">♮</sup>project lead
+        <sup class="author-mark">♮</sup>Project Lead
         {%- assign has_previous_note = true -%}
     {%- endif -%}
     {%- if has_corresponding -%}
         {%- if has_previous_note -%}, {% endif -%}
-        <sup class="author-mark">‡</sup>corresponding author
+        <sup class="author-mark">‡</sup>Corresponding Author
     {%- endif -%}
 )</mark>
 {%- endif -%}
