@@ -30,4 +30,5 @@ links:
   Code: https://github.com/martelzhang/TouchGuide
   Hardware: https://drive.google.com/drive/folders/1vm9Gr-SmsYW3Mj53L00d_iwcakxhVEXc
   YouTube: https://www.youtube.com/watch?v=UfrgtrDb6qE
+  Oral: https://www.youtube.com/watch?v=i6Mf_PX-4Nk
 ---
