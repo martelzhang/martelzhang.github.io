@@ -6,10 +6,16 @@ body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
 
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.pub_date" %}
+{% assign pubs = site.publications | sort: "date" | reverse %}
+{% assign pinned_pubs = pubs | where: "pinned", true %}
+{% assign unpinned_pubs = pubs | where_exp: "item", "item.pinned != true" %}
+{% assign pubs_by_year = pinned_pubs | concat: unpinned_pubs | group_by_exp: "item", "item.pub_date" %}
 
 <div class="row">
     <div class="col-12 col-lg-10">
+        <h1 class="h2 pt-4 mb-0">
+            Publications <span class="publication-heading-note">(Selected papers are <span class="publication-highlight-label">Highlighted</span>)</span>
+        </h1>
         {% for year in pubs_by_year %}
         {% assign num_papers = year.items | size %}
         <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>

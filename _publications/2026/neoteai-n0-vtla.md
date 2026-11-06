@@ -2,6 +2,7 @@
 title:          "$\\mathcal{N}_{0}$-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens"
 date:           2026-07-25 00:02:00 +0800
 selected:       true
+highlight:      true
 pub:            "Technical Report"
 pub_date:       "2026"
 

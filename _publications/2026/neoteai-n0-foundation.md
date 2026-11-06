@@ -2,6 +2,7 @@
 title:          "$\\mathcal{N}_{0}$-Foundation: Towards the Age of Tactile Intelligence"
 date:           2026-07-25 00:03:00 +0800
 selected:       true
+highlight:      true
 pub:            "Technical Report"
 pub_date:       "2026"
 

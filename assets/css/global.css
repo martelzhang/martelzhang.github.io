@@ -10,6 +10,7 @@
     --background-primary: #faf9f6;
     --background-secondary: #faf9f6;
     --background-accent: #f3f1eb;
+    --publication-highlight: rgba(255, 230, 0, 0.035);
     --border-color: #bcc0cc;
     --transition: all 0.15s ease;
     --glow: 0 0 10px rgba(30, 41, 59, 0.15);
@@ -337,6 +338,31 @@ hr {
 }
 
 /* Publication items */
+.publication-heading-note {
+    margin-left: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.publication-mobile-content {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.publication-highlighted {
+    background-color: var(--publication-highlight);
+}
+
+.publication-highlight-label {
+    background-color: rgba(255, 230, 0, 0.18);
+}
+
+.publication-highlighted .publication-mobile-content {
+    background-color: rgba(255, 254, 242, 0.90);
+}
+
 .publication-item:hover {
     background-color: rgba(30, 41, 59, 0.04);
 }
