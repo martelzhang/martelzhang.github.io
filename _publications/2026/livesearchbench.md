@@ -2,7 +2,7 @@
 title:          "An Automated Pipeline for Snapshot-Grounded Benchmark Construction over Dynamic Knowledge"
 date:           2026-10-24 00:01:00 +0800
 selected:       true
-pub:            "Empirical Methods in Natural Language Processing (EMNLP) Findings"
+pub:            "Conference on Empirical Methods in Natural Language Processing (EMNLP) Findings"
 pub_date:       "2026"
 
 cover:          /assets/images/covers/livesearchbench.png
