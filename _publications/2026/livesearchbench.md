@@ -28,5 +28,6 @@ authors:
 
 links:
   Paper: https://aclanthology.org/2026.findings-emnlp.1907.pdf
+  Project Page: https://livesearchbench.github.io/
   Code: https://github.com/hengzzzhou/LiveSearchbench
 ---
